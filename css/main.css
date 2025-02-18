@@ -1,0 +1,11 @@
+body{
+    background-color: #5C2DD5;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+}
+
