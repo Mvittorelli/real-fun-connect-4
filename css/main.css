@@ -1,11 +1,103 @@
-body{
-    background-color: #5C2DD5;
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+body {
+  background-color: #7945ff;
+  font-family: "Space Grotesk", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
 }
 
-header nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 16px;
+header {
+  width: 50%;
 }
 
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+header button {
+  background-color: #5c2dd5;
+  border-radius: 727px;
+  color: #fff;
+  border: none;
+  padding: 12px;
+}
+
+.headingL {
+  font-size: 56px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.headingM {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.headingS {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.headingXS {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player1,
+.player2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 3px #000 solid;
+  padding: 27px;
+  border-radius: 17px;
+  border-bottom: #000 10px solid;
+}
+
+.player1 img,
+.player2 img {
+  position: absolute;
+  top: -25%;
+  left: 25%;
+}
+
+.player1 div,
+.player2 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game{
+    background-image: url("/assets/Shape.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.game button{
+    background-color: #5c2dd5;
+    padding: 15px;
+    border-radius: 727px;
+    border: none;
+}
