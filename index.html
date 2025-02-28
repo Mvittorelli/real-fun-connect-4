@@ -1,99 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-
-    <title>Document</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="app.js" defer></script>
+    <title>Y∆BUJIN G∆ME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="static-overlay"></div>
+    <div id="glitch-overlay"></div>
+    
+    <div class="audio-controls">
+        <button id="toggle-audio">
+            <span class="audio-on">音楽 OFF</span>
+            <span class="audio-off">音楽 ON</span>
+        </button>
+    </div>
+    
+    <div class="popup">
+        <img src="assets/logo.svg" alt="Logo" class="glitch-img">
+        <h1 class="cyber-title">Y∆BUJIN G∆ME</h1>
+        <button class="action-btn glitch-btn" tabindex="0">
+            <span>VS CPU</span>
+            <img src="assets/player-vs-cpu.svg" alt="Player vs CPU">
+        </button>
+        <button class="action-btn alt glitch-btn" tabindex="0">
+            <span>VS PL∆YER</span>
+            <img src="assets/player-vs-player.svg" alt="Player vs Player">
+        </button>
+        <button class="rules-btn glitch-btn" tabindex="0">RULES//</button>
+    </div>
+    
     <header>
-      <nav>
-        <button id="menu">MENU</button>
-        <img src="./assets/logo.svg" alt="logo" />
-        <button id="restart">RESTART</button>
-      </nav>
+        <nav>
+            <button class="nav-btn glitch-btn" tabindex="0">MENU//</button>
+            <img src="assets/logo.svg" alt="logo" class="glitch-img">
+            <button class="nav-btn glitch-btn" tabindex="0">RESTART//</button>
+        </nav>
     </header>
-
+    
     <main>
-      <div class="player1">
-        <img src="./assets/player-one.svg" alt="player-one" />
-        <div>
-          <h2 class="headingS">Player One</h2>
-          <p class="headingL">0</p>
+        <div class="player player-one">
+            <img src="assets/player-one.svg" alt="Player 1" class="glitch-img">
+            <p class="cyber-text">PL∆YER 1</p>
+            <h1 id="score1" class="score-text">0</h1>
         </div>
-      </div>
-      <section class="game">
-        <div class="column1">
-          <button id="c1b1"></button>
-          <button id="c1b2"></button>
-          <button id="c1b3"></button>
-          <button id="c1b4"></button>
-          <button id="c1b5"></button>
-          <button id="c1b6"></button>
+        
+        <div class="grid">
+            <div class="cells active">
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+            </div>
+            <div class="cells">
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+            </div>
+            <div class="cells">
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+            </div>
+            <div class="cells">
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+            </div>
+            <div class="cells">
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+            </div>
+            <div class="cells">
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+            </div>
+            <div class="cells">
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+                <button tabindex="0" class="cell-btn"></button>
+            </div>
+            <div class="timer">
+                <p class="cyber-text blink">TURN: PL∆YER 1</p>
+                <span class="time cyber-text">14s</span>
+            </div>
         </div>
-        <div class="column2">
-            <button id="c2b1"></button>
-            <button id="c2b2"></button>
-            <button id="c2b3"></button>
-            <button id="c2b4"></button>
-            <button id="c2b5"></button>
-            <button id="c2b6"></button>
-          </div>
-          <div class="column3">
-            <button id="c3b1"></button>
-            <button id="c3b2"></button>
-            <button id="c3b3"></button>
-            <button id="c3b4"></button>
-            <button id="c3b5"></button>
-            <button id="c3b6"></button>
-          </div>
-          <div class="column4">
-            <button id="c4b1"></button>
-            <button id="c4b2"></button>
-            <button id="c4b3"></button>
-            <button id="c4b4"></button>
-            <button id="c4b5"></button>
-            <button id="c4b6"></button>
-          </div>
-          <div class="column5">
-            <button id="c5b1"></button>
-            <button id="c5b2"></button>
-            <button id="c5b3"></button>
-            <button id="c5b4"></button>
-            <button id="c5b5"></button>
-            <button id="c5b6"></button>
-          </div>
-          <div class="column6">
-            <button id="c6b1"></button>
-            <button id="c6b2"></button>
-            <button id="c6b3"></button>
-            <button id="c6b4"></button>
-            <button id="c6b5"></button>
-            <button id="c6b6"></button>
-          </div>
-          <div class="column7">
-            <button id="c7b1"></button>
-            <button id="c7b2"></button>
-            <button id="c7b3"></button>
-            <button id="c7b4"></button>
-            <button id="c7b5"></button>
-            <button id="c7b6"></button>
-          </div>
-      </section>
-
-      <div class="player2">
-        <img src="./assets/player-two.svg" alt="player-two" />
-        <div>
-          <h2 class="headingS">Player Two</h2>
-          <p class="headingL">0</p>
+        
+        <div class="player player-two">
+            <img src="assets/player-two.svg" alt="Player 2" class="glitch-img">
+            <p class="cyber-text">PL∆YER 2</p>
+            <h1 id="score2" class="score-text">0</h1>
         </div>
-      </div>
     </main>
-
-    <script src="app.js"></script>
-  </body>
+    
+    <footer>
+        <div class="cyberpunk-footer">Y∆BUJIN CORE &copy; 2025</div>
+    </footer>
+</body>
 </html>
